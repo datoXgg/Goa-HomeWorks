@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idk</title>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName"><br><br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName"><br><br>
+    <button onclick="displayWelcomeMessage()">Submit</button>
+
+    <script>
+        function displayWelcomeMessage() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            if (firstName && lastName) {
+                alert('Welcome ' + firstName + ' ' + lastName);
+            } else {
+                alert('Please enter both your first and last name');
+            }
+        }
+    </script>
+</body>
+</html>

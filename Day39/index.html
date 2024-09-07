@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="header-logo">
+                <img src="Images/Apple-Logo.png" alt="Apple Logo" id="appleLogo">
+            </div>
+            <h2>Welcome to iPhone</h2>
+            <p>Experience the innovation.</p>
+            <a href="#products" class="btn">Explore</a>
+        </div>
+    </section>
+
+    <section id="about" class="colorful-section">
+        <div class="container">
+            <h2>About iPhone</h2>
+            <p>iPhone is a line of smartphones designed and marketed by Apple Inc. It runs Apple's iOS mobile operating system.</p>
+            <p>iPhone is known for its sleek design, powerful performance, and innovative features such as Face ID, Animoji, and augmented reality capabilities.</p>
+            <p>Explore our latest innovations and discover why iPhone is the choice of millions.</p>
+        </div>
+    </section>
+
+    <section id="products" class="colorful-section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-container">
+                <div class="product" id="product1">
+                    <h3>iPhone 15 Pro Max</h3>
+                    <p>The ultimate iPhone experience with the most advanced camera system and longest battery life ever in an iPhone.</p>
+                </div>
+                <div class="product" id="product2">
+                    <h3>iPhone 15 Pro</h3>
+                    <p>A pro camera system for next-level creativity and performance, along with the stunning Super Retina XDR display.</p>
+                </div>
+                <div class="product" id="product3">
+                    <h3>iPhone 15</h3>
+                    <p>More power and capability than ever before, featuring the A17 Bionic chip and advanced dual-camera system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="colorful-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For inquiries, support, or feedback, please contact us:</p>
+            <p>Email: info@iphone.com</p>
+            <p>Phone: 1-800-IPHONE</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p id="idk">&copy; 2024 iPhone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 800,
+                speedAsDuration: true
+            });
+        });
+    </script>
+</body>
+</html>

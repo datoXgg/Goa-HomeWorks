@@ -1,0 +1,139 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2ddff; /* Light purple background */
+    color: #b400ab; /* Purple text */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation items to the right */
+}
+
+header {
+    background-color: #8d00c5; /* Dark purple background */
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header.nav-scroll {
+    background-color: rgba(164, 0, 214, 0.8); /* Transparent dark purple background */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-left: 40%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff07d6; /* Pink on hover */
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #b400a5; /* Purple header text */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack image and text vertically on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+}
+
+.about-content img {
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add some space between image and text */
+}
+
+.project {
+    display: flex;
+    margin-bottom: 40px;
+    overflow: hidden;
+    background-color: #ffffff; /* White background */
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(170, 0, 162, 0.336);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    max-width: 300px;
+    margin-right: 40px;
+}
+
+footer {
+    background-color: #8d00c5; /* Dark purple footer background */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-scroll {
+    background-color: rgba(14, 83, 0, 0.8); /* Transparent dark purple background on scroll */
+}
+
+#idk {
+    margin-top: 100px;
+    margin-left: 45%;
+}
+
+#bdsd ul {
+    margin-left: 20px;
+}
+
+#bdsd h2 {
+    margin-left: 10px;
+}
+
+.projecta {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#pds{
+    margin-right: 450px;
+}

@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    text-align: center;
+}
+input{
+    display: block;
+    margin: 20px;
+    font-size: 50px;
+    margin-left: 500px;
+}
+#contact{
+    font-size: 100px;
+    display: inline;
+}
+#mainh1{
+    color: rgb(141, 175, 175);
+}
+h1{
+    size: 20px;
+    color: green;
+}
+p{
+    font-size: 30px;
+    color: aquamarine;
+}
+#pic1{
+    border-radius: 20px;
+    margin-right: auto;
+}
+main{
+    text-align: center;
+}
+#submit1{
+    margin-left: 720px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(59, 59, 59);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    color: rgb(14, 14, 14);
+}
+.navbar li{
+    float: left;
+    text-align: center;
+}

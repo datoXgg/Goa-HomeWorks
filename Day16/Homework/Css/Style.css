@@ -1,0 +1,30 @@
+body{
+    background-image: url(./images/Backgroundwood.jpg);
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 90px;
+    color: rgb(119, 18, 0);
+}
+h2{
+    text-align: center;
+    font-style: italic;
+    color: rgb(51, 8, 0);
+}
+hr{
+    border: 5px;
+    border-top: 5px solid rgba(92, 13, 13, 0.377);
+}
+p{
+    text-align: center;
+    font-weight: 900;
+    font-size: larger;
+}
+img{
+    width: 500px;
+    outline-style: solid;
+    outline-color: rgb(94, 0, 0);
+}

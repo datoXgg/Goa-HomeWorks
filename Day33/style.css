@@ -1,0 +1,144 @@
+body{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    background-color: white;
+    width: 650px;
+    height: 1400px;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+#omlettediv{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+#omlette{
+    display: flex;
+    width: 570px;
+    border-radius: 10px;
+}
+
+#title{
+    color: rgb(44, 44, 44);
+    font-size: 42px;
+    padding-left: 40px;
+}
+
+#textfirst{
+    color: rgb(100, 100, 100);
+    padding-left: 40px;
+}
+
+#titlesecond{
+    font-size: 20px;
+    color: hsl(332, 51%, 32%);
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#list li {
+    font-size: 14px;
+    padding-bottom: 10px;
+    list-style-type: none; 
+    position: relative; 
+    margin-left: 20px; 
+    color: rgb(68, 68, 68);
+}
+
+#list li::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: hsl(332, 51%, 32%);; 
+    border-radius: 50%; 
+    position: absolute;
+    left: -30px;
+    top: 6px; 
+}
+
+#listdivmain{
+    display: block;
+    padding-top: 1px;
+    padding-left: 40px;
+}
+
+#listdiv{
+    height: 150px;
+    width: 570px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+
+#list2 li {
+    font-size: 14px;
+    padding-bottom: 10px;
+    list-style-type: none; 
+    position: relative; 
+    margin-left: 20px;
+    padding-left: 20px; 
+    color: rgb(71, 71, 71);
+}
+
+#list2 li::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: hsl(14, 45%, 36%); 
+    position: absolute;
+    left: -10px;
+    top: 6px; 
+}
+
+#titlethird{
+    font-size: 30px;
+    color: hsl(14, 45%, 36%);
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+#hr{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+hr{
+    border: 1px solid;
+    border-color: rgb(182, 182, 182);
+}
+
+#instructions{
+    padding-left: 40px;
+    color: hsl(14, 45%, 36%);
+}
+
+#listdiv3{
+    display: flex;
+}
+
+#container{
+    display: flex;
+}
+  
+#numbers{
+    color: hsl(14, 45%, 36%);
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 300px;
+    padding-left: 50px;
+    font-weight: 900;
+}
+
+#listdiv3 li{
+    color: rgb(59, 59, 59);
+    list-style-type: none;
+    padding-right: 115px;
+}

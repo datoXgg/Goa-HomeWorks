@@ -1,0 +1,372 @@
+.container {
+    max-width: 1200px;
+    position: relative;
+}
+
+header {
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+hr {
+    border: solid 1px;
+    border-color: rgb(240, 240, 240);
+}
+
+#logo {
+    width: 40px;
+    vertical-align: middle;
+}
+
+#search {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.right-links {
+    position: absolute;
+    top: 6%; /* Adjust the position to align vertically */
+    transform: translateY(-50%); /* Center align vertically */
+    right: 0;
+    padding: 0 20px; /* Add some padding for better spacing */
+}
+
+.right-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    align-items: center; /* Align items vertically */
+}
+
+.right-links ul li {
+    margin-left: 20px;
+}
+
+.right-links ul li:first-child {
+    margin-left: 0;
+}
+
+
+.right-links ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Make the image round */
+}
+
+.right-links ul li a {
+    text-decoration: none;
+}
+
+/* Style for Sign Up link */
+.right-links ul li:nth-child(1) a {
+    background-color: rgb(96, 158, 199);
+    color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+/* Style for Sign In link */
+.right-links ul li:nth-child(2) a {
+    color: grey;
+}
+
+#container3{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#logo2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Make the image round */
+}
+
+#idk{
+    display: flex;
+    width: 400px;
+    height: 20px;
+}
+
+#namefirst{
+    padding-left: 30px;
+    font-weight: 500;
+}
+
+#follow{
+    color: green;
+    padding-left: 15px;
+}
+
+#idk2{
+    display: flex;
+}
+
+#publishedin{
+    color: grey;
+    padding-left: 90px;
+}
+
+#level{
+    padding-left: 10px;
+}
+
+#fourmin{
+    color: grey;
+}
+
+.container2{
+    display: inline;
+    font-size: 30px
+}
+
+#comment{
+    padding-left: 20px;
+}
+
+#boomark{
+    padding-left: 68%;
+}
+
+#imagefirst{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#centerised{
+    color: grey;
+    padding-left: 33%;
+}
+
+.weak{
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.numbers{
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+#imagesecond{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imagethird{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imagefourth{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imagefifth{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imagesix{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imageseven{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imageeight{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imagenine{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imageten{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imageeleven{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#imagetwelve{
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+#imagethirteen{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#choosethings{
+    padding-top: 100px;
+}
+
+.marginneeded{
+    margin-right: 20px;
+    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#container4{
+    margin-top: 150px;
+    width: 50%;
+    height: 800px;
+    background-color: rgb(248, 248, 248);
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#logo3{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    margin-top: 100px;
+    border: solid 1px;
+    border-color: rgb(177, 177, 177);
+}
+
+#namesecond{
+    font-size: 27px;
+}
+
+#idontknow{
+    display: flex;
+}
+
+#writerfor{
+    color: grey;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.bluebutton{
+    background-color: rgb(62, 139, 255);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    margin-left: 200px;
+}
+
+#bluebutton{
+    background-color: rgb(62, 139, 255);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+#ihelp{
+    margin-right: 30%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#morere{
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#imagefourteen{
+    width: 40%;
+}
+
+#imagefifteen{
+    width: 40%;
+    margin-left: 50px;
+}
+
+#diva{
+    display: flex;
+}
+
+#logo4{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#jaja{
+    display: flex;
+}
+
+#jaja p{
+    padding-top: 10px;
+}
+
+.abitdark{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.abitgrey{
+    color: grey;
+}
+
+#logo5{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+#tormeti{
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+
+#love{
+    margin-top: 0px;
+}

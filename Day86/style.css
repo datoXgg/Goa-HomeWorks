@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+}
+
+.photo-container {
+    margin: 0 20px;
+}
+
+img {
+    max-width: 600px;
+    max-height: 400px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #8dffd9;
+    color: white;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.nav-button:disabled {
+    background-color: #ccc;
+}

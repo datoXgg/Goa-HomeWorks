@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 style="font-family: 'Montserrat', sans-serif;">Welcome to GitHub Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" style="font-family: 'Montserrat', sans-serif;">About</a></li>
+                <li><a href="#why-github" style="font-family: 'Montserrat', sans-serif;">Why GitHub</a></li>
+                <li><a href="#contact" style="font-family: 'Montserrat', sans-serif;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="description">
+                    <h2 style="font-family: 'Roboto', sans-serif;">About GitHub</h2>
+                    <p style="font-family: 'Roboto', sans-serif;">GitHub is a platform that provides hosting for software development and version control using Git. It allows developers to collaborate on projects, track changes to their code, and manage projects effectively.</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="./Images/GitHub-logo.png" alt="GitHub Logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="why-github" class="section">
+            <div class="container">
+                <div class="description">
+                    <h2 style="font-family: 'Roboto', sans-serif;">Why GitHub?</h2>
+                    <p style="font-family: 'Roboto', sans-serif;">GitHub offers various features such as version control, issue tracking, and pull requests, which streamline the development process. It is widely used in the open-source community and by companies of all sizes.</p>
+                </div>
+
+                <div class="benefits">
+                    <h3 style="font-family: 'Roboto', sans-serif;">Key Benefits:</h3>
+                    <ul style="font-family: 'Roboto', sans-serif;">
+                        <li>Collaboration</li>
+                        <li>Version Control</li>
+                        <li>Project Management</li>
+                        <li>Community Support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container2">
+                <h2 style="font-family: 'Roboto', sans-serif;">Contact Us</h2>
+                <form action="#" method="post" class="contact-form">
+                    <label for="name" style="font-family: 'Roboto', sans-serif;">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email" style="font-family: 'Roboto', sans-serif;">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message" style="font-family: 'Roboto', sans-serif;">Message:</label>
+                    <textarea id="message" name="message" rows="4" required style="font-family: 'Roboto', sans-serif;"></textarea>
+                    <button type="submit" style="font-family: 'Montserrat', sans-serif;">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer style="font-family: 'Montserrat', sans-serif;">
+        <p>&copy; 2024 GitHub Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 800,
+                speedAsDuration: true
+            });
+        });
+    </script>
+</body>
+
+</html>

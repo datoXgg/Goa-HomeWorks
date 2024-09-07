@@ -1,0 +1,22 @@
+.list-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.styled-list {
+    list-style-type: disc;
+    padding: 0;
+}
+
+.styled-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f8f9fa; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease;
+}
+
+.styled-list li:hover {
+    background-color: #e9ecef; 
+}

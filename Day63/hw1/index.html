@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #90e785;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="main-container">
+    <div id="register-container" class="hidden">
+        <h3>Register</h3>
+        <input type="text" id="register-name" placeholder="Name">
+        <input type="email" id="register-email" placeholder="Email">
+        <input type="password" id="register-password" placeholder="Password">
+        <button onclick="registerUser()">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+    <div id="login-container">
+        <h3>Login</h3>
+        <input type="number" id="login-id" placeholder="User ID">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="loginUser()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+    </div>
+    <div id="bank-operations" class="hidden">
+        <h3>Welcome, <span id="user-name"></span></h3>
+        <p>Your User ID: <span id="user-id"></span></p>
+        <button onclick="logoutUser()">Logout</button>
+    </div>
+</div>
+
+<script>
+    let users = [];
+    let currentUser = null;
+
+    function showRegister() {
+        document.getElementById('login-container').classList.add('hidden');
+        document.getElementById('register-container').classList.remove('hidden');
+    }
+
+    function showLogin() {
+        document.getElementById('register-container').classList.add('hidden');
+        document.getElementById('login-container').classList.remove('hidden');
+    }
+
+    function registerUser() {
+        const name = document.getElementById('register-name').value;
+        const email = document.getElementById('register-email').value;
+        const password = document.getElementById('register-password').value;
+
+        if (name && email && password) {
+            const userId = users.length + 1;
+            users.push({
+                id: userId,
+                name: name,
+                email: email,
+                password: password
+            });
+            alert(`User registered successfully! Your ID is ${userId}`);
+            showLogin();
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
+
+    function loginUser() {
+        const userId = parseInt(document.getElementById('login-id').value);
+        const password = document.getElementById('login-password').value;
+
+        const user = users.find(user => user.id === userId && user.password === password);
+
+        if (user) {
+            currentUser = user;
+            document.getElementById('login-container').classList.add('hidden');
+            document.getElementById('bank-operations').classList.remove('hidden');
+            document.getElementById('user-name').innerText = currentUser.name;
+            document.getElementById('user-id').innerText = currentUser.id;
+        } else {
+            alert('Invalid ID or password.');
+        }
+    }
+
+    function logoutUser() {
+        currentUser = null;
+        document.getElementById('bank-operations').classList.add('hidden');
+        document.getElementById('login-container').classList.remove('hidden');
+    }
+</script>
+
+</body>
+</html>

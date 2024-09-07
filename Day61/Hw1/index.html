@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idk</title>
+    <script>
+        function isTeenager(age, hasPermission) {
+            if (age < 18) {
+                return false;
+            }
+            if (age === 18 && hasPermission) {
+                return true;
+            }
+            if (age > 18) {
+                return hasPermission;
+            }
+            return null;
+        }
+
+        function checkIsTeenager() {
+            var age = parseInt(document.getElementById('age').value, 10);
+            var hasPermission = document.getElementById('hasPermission').checked;
+
+            var result = isTeenager(age, hasPermission);
+
+            document.getElementById('result').textContent = result === null ? 'N/A' : result;
+        }
+    </script>
+</head>
+<body>
+    <h1>check if person can get drivers license</h1>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="0"><br><br>
+
+    <label for="hasPermission">Permission:</label>
+    <input type="checkbox" id="hasPermission" name="hasPermission"><br><br>
+
+    <button onclick="checkIsTeenager()">Check</button>
+
+    <h2>Result: <span id="result">N/A</span></h2>
+</body>
+</html>
