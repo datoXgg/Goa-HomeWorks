@@ -1,3 +1,4 @@
+
 function* generateNumbers() {
     let num = 0;
     while (true) {
