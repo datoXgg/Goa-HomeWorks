@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar: A Journey Beyond the Stars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interstellar: A Journey Beyond the Stars</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About the Film</a></li>
+                <li><a href="#cast">Cast and Characters</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About the Film</h2>
+            <p>"Interstellar," directed by Christopher Nolan, is a visually stunning science fiction film that 
+                explores the depths of space and the bonds of love. Released in November 2014, the film follows Cooper,
+                a former NASA pilot played by Matthew McConaughey, who is tasked with leading a mission to find a new habitable
+                planet for humanity. The film delves into profound themes such as sacrifice, the power of love across time and space,
+                and the human spirit's resilience. With a compelling screenplay co-written
+                by Nolan and Jonathan Nolan, "Interstellar" challenges viewers to ponder the complexities of time, existence,
+                and human connection.</p>
+        </section>
+        <section id="cast">
+            <h2>Cast and Characters</h2>
+            <p>The film features an exceptional cast, including Anne Hathaway as Amelia Brand,
+                a scientist working alongside Cooper. Jessica Chastain portrays Murphy Cooper,
+                Cooper's daughter, who plays a pivotal role in the narrative. Michael Caine appears
+                as Professor Brand, who guides the team with his expertise. Each character adds depth to the story,
+                showcasing the emotional stakes of their interstellar journey.</p>
+        </section>
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <p>Critically acclaimed, "Interstellar" received praise for its ambitious storytelling and visual effects.
+                It boasts a high rating on platforms like Rotten Tomatoes and Metacritic,
+                with many critics lauding its emotional depth and thought-provoking concepts.
+                Quotes from notable film critics highlight the film's impact, emphasizing its place in contemporary cinema and its resonant themes.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="download (1).jpg" alt="Interstellar Scene 1" class="gallery-image" onclick="openLightbox('image1.jpg')">
+                <img src="download (2).jpg" alt="Interstellar Scene 2" class="gallery-image" onclick="openLightbox('image2.jpg')">
+                <img src="download.jpg" alt="Interstellar Scene 3" class="gallery-image" onclick="openLightbox('image3.jpg')">
+                <img src="images.jpg" alt="Interstellar Scene 3" class="gallery-image" onclick="openLightbox('image3.jpg')">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </form>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Interstellar Fan Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
