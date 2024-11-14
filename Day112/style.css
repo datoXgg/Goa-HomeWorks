@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f0a500; 
+}
+
+header .search input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.hero .hero-content {
+    width: 50%;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #f0a500;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #d78f00;
+}
+
+.hero .hero-image {
+    width: 50%;
+    padding: 20px;
+}
+
+.hero .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.best {
+    background-color: #00509E; 
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.best .best-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.best h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.best p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
