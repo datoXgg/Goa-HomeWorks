@@ -15,11 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
 window.onload = function() {
     console.log("Welcome to the Georgian Cultural Journey!");
     
-    // Simple fade-in effect for page load
     const features = document.querySelectorAll('.feature');
     features.forEach((feature, index) => {
         setTimeout(() => {
             feature.classList.add('fadeInAnimation');
-        }, 200 * index); // Add delay for each feature
+        }, 200 * index); 
     });
 };
