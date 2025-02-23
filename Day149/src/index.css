@@ -1,0 +1,11 @@
+.landing-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #00bcd4;
+  color: white;
+}
+
+.turtle {
+  font-size: 5rem;
+  margin: 20px;
+}
