@@ -1,0 +1,135 @@
+body {
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #1a1a1b;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #d3d6da;
+    padding-bottom: 0.5rem;
+}
+
+.instructions {
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1rem;
+    color: #787c7e;
+}
+
+.board {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+
+.tile {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #1a1a1b;
+    text-transform: uppercase;
+    user-select: none;
+    border: 2px solid #d3d6da;
+}
+
+.keyboard {
+    margin: 0 8px;
+    user-select: none;
+}
+
+.keyboard-row {
+    display: flex;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.keyboard-row button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    margin: 0 6px 0 0;
+    height: 58px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #d3d6da;
+    color: #1a1a1b;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.3);
+}
+
+.keyboard-row button:last-child {
+    margin-right: 0;
+}
+
+.keyboard-row button[data-key="ENTER"],
+.keyboard-row button[data-key="DEL"] {
+    flex: 1.5;
+    font-size: 0.75rem;
+}
+
+.tile[data-state="correct"] {
+    background-color: #6aaa64;
+    color: white;
+    border-color: #6aaa64;
+}
+
+.tile[data-state="present"] {
+    background-color: #c9b458;
+    color: white;
+    border-color: #c9b458;
+}
+
+.tile[data-state="absent"] {
+    background-color: #787c7e;
+    color: white;
+    border-color: #787c7e;
+}
+
+.message {
+    height: 30px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.message.success {
+    color: #6aaa64;
+}
+
+.message.error {
+    color: #ff6b6b;
+}

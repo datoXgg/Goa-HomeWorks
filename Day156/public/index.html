@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify-like CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Music Library 🎵</h1>
+    
+    <form id="songForm">
+      <input type="text" id="title" placeholder="Song Title" required>
+      <input type="text" id="artist" placeholder="Artist" required>
+      <input type="number" id="duration" placeholder="Duration (sec)">
+      <input type="text" id="album" placeholder="Album">
+      <button type="submit">Add Song</button>
+    </form>
+
+    <div id="songList" class="song-grid"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
