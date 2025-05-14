@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capybara Friends</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Meet Our Capybaras! 🐹</h1>
+  <div id="capy-list"></div>
+
+  <script>
+    function loadCapybaras() {
+      fetch('/api/capybaras')
+        .then(r => r.json())
+        .then(data => {
+          const list = document.getElementById('capy-list');
+          list.innerHTML = data.map(c => `
+            <div class="capy-card">
+              <h3>${c.name}</h3>
+              <p>Age: ${c.age}</p>
+            </div>
+          `).join('');
+        });
+    }
+    loadCapybaras();
+  </script>
+</body>
+</html>

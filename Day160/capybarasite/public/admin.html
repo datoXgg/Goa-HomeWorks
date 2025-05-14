@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Capybara Admin 🛠️</h1>
+  
+  <form id="add-form">
+    <input type="text" placeholder="Name" id="name" required>
+    <input type="number" placeholder="Age" id="age" required>
+    <button type="submit">Add Capybara</button>
+  </form>
+
+  <div id="capy-list"></div>
+
+  <script>
+    function loadCapybaras() {
+      fetch('/api/capybaras')
+        .then(r => r.json())
+        .then(data => {
+          const list = document.getElementById('capy-list');
+          list.innerHTML = data.map(c => `
+            <div class="capy-card">
+              <h3>${c.name}</h3>
+              <p>Age: ${c.age}</p>
+              <button onclick="deleteCapy(${c.id})">Delete</button>
+            </div>
+          `).join('');
+        });
+    }
+
+    document.getElementById('add-form').onsubmit = (e) => {
+      e.preventDefault();
+      const newCapy = {
+        name: document.getElementById('name').value,
+        age: document.getElementById('age').value
+      };
+      
+      fetch('/api/capybaras', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newCapy)
+      }).then(loadCapybaras);
+    };
+
+    function deleteCapy(id) {
+      fetch(`/api/capybaras/${id}`, { method: 'DELETE' })
+        .then(loadCapybaras);
+    }
+
+    loadCapybaras();
+  </script>
+</body>
+</html>
