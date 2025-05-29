@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe World | Discover Culinary Delights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Recipe World</span>
+            </div>
+            <div class="user-actions">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-bookmark"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+            </div>
+        </div>
+        
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="meal-plans.html">Meal Plans</a></li>
+                    <li><a href="cooking-tips.html">Cooking Tips</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search for recipes...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Culinary Delights</h1>
+            <p>Explore thousands of delicious recipes from around the world. Whether you're a beginner or a pro chef, we have something for everyone.</p>
+            <a href="recipes.html" class="btn">Browse Recipes</a>
+            <a href="submit-recipe.html" class="btn btn-outline">Create Recipe</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>Recipe Categories</h2>
+            <p>Find recipes by category to suit any occasion or dietary preference</p>
+        </div>
+        
+        <div class="categories">
+            <div class="category-card">
+                <i class="fas fa-drumstick-bite"></i>
+                <h3>Meat & Poultry</h3>
+                <p>1,250 recipes</p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-fish"></i>
+                <h3>Seafood</h3>
+                <p>850 recipes</p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Vegetarian</h3>
+                <p>1,980 recipes</p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Vegan</h3>
+                <p>1,120 recipes</p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-bread-slice"></i>
+                <h3>Bakery</h3>
+                <p>750 recipes</p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-ice-cream"></i>
+                <h3>Desserts</h3>
+                <p>1,350 recipes</p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-glass-martini-alt"></i>
+                <h3>Drinks</h3>
+                <p>680 recipes</p>
+            </div>
+            
+            <div class="category-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Healthy</h3>
+                <p>1,540 recipes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: #f0f2f5;">
+        <div class="section-header">
+            <h2>Featured Recipes</h2>
+            <p>Hand-picked delicious recipes our editors love</p>
+        </div>
+        
+        <div class="recipes">
+            <div class="recipe-card">
+                <img src="images/grilled-salmon.jpg" alt="Grilled Salmon" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Grilled Salmon with Lemon Butter</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 25 mins</span>
+                        <span><i class="fas fa-user"></i> 4 servings</span>
+                    </div>
+                    <p class="recipe-description">Perfectly grilled salmon with a zesty lemon butter sauce that melts in your mouth.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Seafood</span>
+                        <span class="tag">Healthy</span>
+                        <span class="tag">Quick</span>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="difficulty easy">Easy</span>
+                        <a href="recipes/grilled-salmon.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card">
+                <img src="images/vegetable-salad.jpg" alt="Vegetable Salad" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Rainbow Vegetable Salad</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 15 mins</span>
+                        <span><i class="fas fa-user"></i> 2 servings</span>
+                    </div>
+                    <p class="recipe-description">A colorful and nutritious salad packed with fresh vegetables and a tangy dressing.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Vegan</span>
+                        <span class="tag">Salad</span>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="difficulty easy">Easy</span>
+                        <a href="recipes/vegetable-salad.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card">
+                <img src="images/margherita-pizza.jpg" alt="Margherita Pizza" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Classic Margherita Pizza</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 1 hr 20 mins</span>
+                        <span><i class="fas fa-user"></i> 4 servings</span>
+                    </div>
+                    <p class="recipe-description">Authentic Italian pizza with fresh tomatoes, mozzarella, and basil on a thin crust.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Pizza</span>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="difficulty medium">Medium</span>
+                        <a href="recipes/margherita-pizza.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="database-header">
+            <div class="section-header" style="text-align: left; margin-bottom: 0;">
+                <h2>Recipe Database</h2>
+                <p>Explore our collection of 15,000+ recipes</p>
+            </div>
+            
+            <div class="filter-controls">
+                <select>
+                    <option>All Categories</option>
+                    <option>Breakfast</option>
+                    <option>Lunch</option>
+                    <option>Dinner</option>
+                    <option>Desserts</option>
+                </select>
+                <select>
+                    <option>Any Difficulty</option>
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option>Hard</option>
+                </select>
+                <input type="text" placeholder="Search recipes...">
+            </div>
+        </div>
+        
+        <div class="recipes">
+            <div class="recipe-card">
+                <img src="images/creamy-pasta.jpg" alt="Pasta" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Creamy Garlic Pasta</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 30 mins</span>
+                        <span><i class="fas fa-user"></i> 3 servings</span>
+                    </div>
+                    <p class="recipe-description">Rich and creamy pasta with garlic and parmesan cheese. Perfect comfort food.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Pasta</span>
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Italian</span>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="difficulty easy">Easy</span>
+                        <a href="recipes/creamy-pasta.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card">
+                <img src="images/beef-steak.jpg" alt="Beef Steak" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Pan-Seared Beef Steak</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 45 mins</span>
+                        <span><i class="fas fa-user"></i> 2 servings</span>
+                    </div>
+                    <p class="recipe-description">Juicy steak with a perfect sear and flavorful herb butter topping.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Beef</span>
+                        <span class="tag">Dinner</span>
+                        <span class="tag">Protein</span>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="difficulty medium">Medium</span>
+                        <a href="recipes/beef-steak.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card">
+                <img src="images/french-toast.jpg" alt="French Toast" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Berry French Toast</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 25 mins</span>
+                        <span><i class="fas fa-user"></i> 3 servings</span>
+                    </div>
+                    <p class="recipe-description">Sweet french toast topped with fresh berries and maple syrup. Perfect for brunch.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Breakfast</span>
+                        <span class="tag">Sweet</span>
+                        <span class="tag">Brunch</span>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="difficulty easy">Easy</span>
+                        <a href="recipes/french-toast.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="recipes.html" class="btn" style="padding: 0.8rem 3rem;">Load More Recipes</a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get weekly recipe inspiration, cooking tips, and exclusive discounts delivered to your inbox.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Recipe World</h3>
+                <p>Your ultimate destination for delicious recipes from around the globe. Discover, cook, and share culinary delights with our community.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="meal-plans.html">Meal Plans</a></li>
+                    <li><a href="cooking-tips.html">Cooking Tips</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Popular Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="category.html?type=vegetarian">Vegetarian Recipes</a></li>
+                    <li><a href="category.html?type=vegan">Vegan Recipes</a></li>
+                    <li><a href="category.html?type=gluten-free">Gluten-Free</a></li>
+                    <li><a href="category.html?type=quick">Quick & Easy</a></li>
+                    <li><a href="category.html?type=desserts">Desserts</a></li>
+                    <li><a href="category.html?type=healthy">Healthy Eating</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> contact@recipeworld.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Culinary Street, Food City</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Recipe World. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--primary);"></i> for food lovers</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
